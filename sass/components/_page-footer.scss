@@ -1,22 +1,18 @@
 .footer {
   padding: 60px 0;
   background-color: var(--primary-black-color);
-}
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-}
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
 
-.join-us {
-  margin-left: 70px;
-}
-
-.footer__title {
-  line-height: 1.14;
-  color: var(--primary-white-color);
-  text-transform: uppercase;
-  font-size: 14px;
+  &__title {
+    line-height: 1.14;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    font-size: 14px;
+  }
 }
 
 .footer-social-icons-list {
@@ -36,6 +32,11 @@
   background-color: rgba(255, 255, 255, 0.1);
   margin: 0 10px 0 0;
   transition: background-color var(--transition-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-social-icon {
@@ -45,28 +46,17 @@
   transition: fill var(--transition-func);
 }
 
-.footer-social-icons-link:hover,
-.footer-social-icons-link:focus {
-  background-color: var(--accent-color);
-}
-
 .adress {
   margin-top: 20px;
   font-style: normal;
-}
 
-.adress__item {
-  margin-bottom: 9px;
-}
+  &__item {
+    margin-bottom: 9px;
 
-.adress__item:last-child {
-  margin-bottom: 0;
-}
-
-.adress__link--map {
-  color: var(--primary-white-color);
-
-  line-height: 1.71;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .adress__link {
@@ -75,37 +65,42 @@
 
   font-style: normal;
   line-height: 1.71;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.adress__link:hover,
-.adress__link:focus {
-  color: var(--accent-color);
+.adress__link--map {
+  color: var(--primary-white-color);
+  line-height: 1.71;
 }
 
 .subscribe {
   margin-left: 93px;
   padding: 12px 0 0;
-}
 
-.subscribe__form {
-  margin: 20px 0 0;
-  display: flex;
-}
+  &__form {
+    margin: 20px 0 0;
+    display: flex;
+  }
 
-.subscribe__input {
-  padding: 15px 16px;
-  width: 358px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: calc(20 / 16);
-  color: rgba(255, 255, 255, 0.6);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__input {
+    padding: 15px 16px;
+    width: 358px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: rgba(255, 255, 255, 0.6);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.subscribe__input:focus {
-  border-color: var(--accent);
+    &:focus {
+      border-color: var(--accent);
+    }
+  }
 }
 
 .subscribe__btn {
@@ -125,4 +120,8 @@
 
 .subscribe__icon {
   margin: 0 0 0 10px;
+}
+
+.join-us {
+  margin-left: 70px;
 }

@@ -13,22 +13,22 @@
   margin-left: 93px;
 }
 
-.main-nav__link {
-  color: var(--title-text-color);
-}
-
 .main-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.main-nav__link:hover,
-.main-nav__link:focus,
-.main-nav__link--active {
-  color: var(--accent-color);
+.main-nav__link {
+  color: var(--title-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .main-nav__link--active {
   position: relative;
+  color: var(--accent-color);
 }
 
 .main-nav__link--active::after {
